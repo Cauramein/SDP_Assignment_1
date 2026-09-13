@@ -16,4 +16,12 @@ public class VrDirector {
                 .enableEyeTracking(true)
                 .build();
     }
+    public VrHeadset constructDeveloperTestRig(VrHeadsetBuilder builder) {
+        return builder.setStrap(StrapType.BASIC_FABRIC)
+                .setFaceCover(FacialInterface.FOAM)
+                .setControllers(ControllerType.STANDARD)
+                .addPcLinkCable(true) // Crucial for pushing code from PC
+                .enableEyeTracking(false)
+                .build();
+    }
 }
