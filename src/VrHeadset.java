@@ -1,3 +1,7 @@
+enum StrapType { BASIC_FABRIC, ELITE_BATTERY_STRAP }
+enum FacialInterface { FOAM, SILICONE, VENTILATED }
+enum ControllerType { STANDARD, PRO_TRACKING }
+
 public class VrHeadset {
     private StrapType strap;
     private FacialInterface faceCover;
